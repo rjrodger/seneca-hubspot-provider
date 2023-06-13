@@ -1,11 +1,16 @@
-const docs = {
+const messages = {
   get_info: {
     desc: 'Get information about the company.',
   },
 }
 
-export default docs
+const sections = {}
+
+export default {
+  messages,
+  sections,
+}
 
 if ('undefined' !== typeof(module)) {
-  module.exports = docs
+  module.exports = { messages, sections }
 }
