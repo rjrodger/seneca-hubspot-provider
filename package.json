@@ -2,7 +2,7 @@
   "name": "@seneca/hubspot-provider",
   "version": "0.2.0",
   "main": "dist/hubspot-provider.js",
-  "type": "commonjs", 
+  "type": "commonjs",
   "description": "Seneca entity provider for the HubSpot API",
   "homepage": "https://github.com/senecajs/seneca-hubspot-provider",
   "directories": {
@@ -14,7 +14,9 @@
     "hubspot-provider"
   ],
   "author": "Richard Rodger - richardrodger.com",
-  "contributors": ["Aleksandar Milenkovic - jk1143298@gmail.com"],
+  "contributors": [
+    "Aleksandar Milenkovic - jk1143298@gmail.com"
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/senecajs/seneca-hubspot-provider.git"
@@ -43,14 +45,15 @@
     "node": ">=14"
   },
   "dependencies": {
+    "@seneca/provider": "^1.0.1",
     "hubspot": "^0.2.0"
   },
   "peerDependencies": {
+    "@seneca/env": ">=0.2",
+    "@seneca/provider": ">=0.5",
     "seneca": ">=3",
     "seneca-entity": ">=17",
-    "seneca-promisify": ">=2",
-    "@seneca/provider": ">=0.5",
-    "@seneca/env": ">=0.2"
+    "seneca-promisify": ">=2"
   },
   "devDependencies": {
     "@hubspot/api-client": "^7.0.1",
